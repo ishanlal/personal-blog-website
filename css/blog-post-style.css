@@ -1,0 +1,40 @@
+.container{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+  background-color: #556271;
+  color: white;
+  font-family: sans-serif;
+  grid-template-areas:
+  "hd hd hd"
+  "sh sh sh"
+  "main main sb"
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1em;
+  text-align: justify;
+  padding: 2em;
+}
+.text{
+  text-align: justify;
+  padding: 2em;
+  border-right: 2px solid white;
+}
+.sidebar{
+    grid-area: sb;
+    padding: 4em;
+    color: red;
+    place-items: center;
+}
+.heading{
+  grid-area: hd;
+  text-align: center;
+}
+.subheading{
+  grid-area: sh;
+  text-align: center;
+  color: #7B8898;
+}

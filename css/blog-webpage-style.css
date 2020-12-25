@@ -1,0 +1,36 @@
+.container{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-gap: 1em;
+      font-family: sans-serif;
+      grid-template-areas:
+      "hd hd hd hd"
+      "bb bb bb bb"
+      "sd main main main"
+  }
+
+.nestedGrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-flow: dense;
+  grid-gap: 1em;
+  place-items: center;
+  border: 1px solid black;
+}
+
+.heading{
+  /* row start/column start/ row end/ column end */
+    grid-area: hd;
+    text-align: center;
+}
+.subheading{
+  grid-area: bb;
+  text-align: center;
+}
+.sidebar{
+  grid-area: sd;
+  text-align: center;
+}
+.content{
+  grid-area: main;
+}
