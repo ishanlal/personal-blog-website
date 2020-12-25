@@ -23,7 +23,15 @@
   padding: 2em;
   border-right: 2px solid white;
 }
+figure {
+  place-items:center;
+    text-align: center;
+}
 .sidebar{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+    text-align: justify;
     grid-area: sb;
     padding: 4em;
     color: red;
